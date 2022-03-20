@@ -1,0 +1,45 @@
+div {
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 650px;
+}
+
+/* Đây là thủ thuật clearfix*/
+div:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.image {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 200px;
+}
+
+.image img {
+    max-width: 100%; /* Dành cho hình có width lớn hơn thành phần bao ngoài */
+}
+
+.text {
+    float: left;
+    width: 380px;
+}
+
+@media only screen and (max-width: 640px) {
+    .image,
+    .text {
+        float: none;
+        width: 100%;
+    }
+
+    .image {
+        margin-right: 0;
+        margin-left: 0;        
+    }
+}
