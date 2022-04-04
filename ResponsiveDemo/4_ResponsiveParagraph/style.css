@@ -32,7 +32,7 @@ div:after {
 }
 
 @media only screen and (max-width: 640px) {
-    .image,
+    .image ,
     .text {
         float: none;
         width: 100%;
