@@ -10,7 +10,6 @@ ul {
     max-width: 100%;
 }
 
-/* Đây là thủ thuật clearfix */
 ul:after {
     clear: both;
     content: ".";
